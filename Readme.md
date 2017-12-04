@@ -52,3 +52,20 @@ var conf = Loader.LoadFile<TestConfig>("TestConf.json");
 conf.TestValue1; //Conf Test Value 2
 conf.subConfig.SubFileValue; //SubFileValue Test value
 ```
+
+## Setting the file config root
+You can set the config root
+```csharp
+Aniel.SimpleConf.Loader.ConfigRoot = "<path to folder with config files>";
+
+//Make sure you set useConfigRoot
+Loader.LoadFile<TestConfig>("TestConf.json", useConfigRoot: true);
+```
+
+## Overwriting config root with environment variables
+If you set the environment variable `CONFIG_ROOT_PATH` you can overwrite the config root.
+
+If you want to change the name of the environment variable you can use:
+```csharp
+Aniel.SimpleConf.SimpleConfConstants.EnvironmentConfigPathName = "<yor environment variable name>";
+```

@@ -7,7 +7,7 @@ namespace Aniel.SimpleConf
 {
 	public static class Loader
 	{
-		public static string ConfigBasePath { get; set; } = AppContext.BaseDirectory;
+		public static string ConfigRoot { get; set; } = AppContext.BaseDirectory;
 		public static bool ThrowOnMissingEnvironmentVariable { get; set; } = false;
 
 		/// <summary>
@@ -19,7 +19,7 @@ namespace Aniel.SimpleConf
 			var folderPath = Environment.GetEnvironmentVariable(SimpleConfConstants.EnvironmentConfigPathName);
 			if (folderPath != null)
 			{
-				folderPath = ConfigBasePath;
+				folderPath = ConfigRoot;
 			}
 			else if (ThrowOnMissingEnvironmentVariable)
 			{
