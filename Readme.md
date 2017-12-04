@@ -2,6 +2,8 @@
 
 This is a small Helper for consuming strong typed json config files from a path.
 
+Available via [nuget](https://www.nuget.org/packages/Aniel.SimpleConf)
+
 ## Usage
 
 ```csharp
