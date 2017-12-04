@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <Target Name="CopyAssets" AfterTargets="Build">
+    <Message Importance="high" Text="Copy test assets" />
+    <Copy SourceFiles="$(ProjectDir)\TestConf.json" DestinationFolder="$(TargetDir)" ContinueOnError="false" />
+    <Copy SourceFiles="$(ProjectDir)\SubFile.json" DestinationFolder="$(TargetDir)" ContinueOnError="false" />  
+  </Target>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
+    <PackageReference Include="xunit" Version="2.3.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\src\SimpleConf.csproj" />
+  </ItemGroup>
+
+</Project>
