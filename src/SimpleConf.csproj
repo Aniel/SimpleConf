@@ -2,7 +2,21 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-	<PackageVersion>1.0.1</PackageVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>Aniel.SimpleConf</PackageId>
+    <Version>1.0.1</Version>
+    <Authors>Niels Morf</Authors>
+    <Company />
+    <Product />
+    <Description>This is a small Helper for consuming strong typed json config files from a path.</Description>
+    <PackageProjectUrl>https://github.com/Aniel/SimpleConf</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Aniel/SimpleConf</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Copyright>Niels Morf</Copyright>
+    <PackageLicenseUrl>https://github.com/Aniel/SimpleConf/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageTags>asp.net dotnet-core configuration json</PackageTags>
+    <ApplicationIcon />
+    <Win32Resource />
   </PropertyGroup>
 
   <ItemGroup>
