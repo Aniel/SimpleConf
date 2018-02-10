@@ -19,7 +19,7 @@ namespace Aniel.SimpleConf
 			var folderPath = Environment.GetEnvironmentVariable(SimpleConfConstants.EnvironmentConfigPathName);
 			if (folderPath != null)
 			{
-				folderPath = ConfigRoot;
+				ConfigRoot = folderPath;
 			}
 			else if (ThrowOnMissingEnvironmentVariable)
 			{
