@@ -4,6 +4,14 @@ This is a small Helper for consuming strong typed json config files from a path.
 
 Available via [nuget](https://www.nuget.org/packages/Aniel.SimpleConf)
 
+## Changelog
+
+### 1.0.1
+- Fix: Environment variable gets ignored
+
+### 1.0.0
+- First Release
+
 ## Usage
 
 ```csharp
